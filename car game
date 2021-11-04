@@ -3,15 +3,13 @@ start = "start"
 stop = "stop"
 quit = "quit"
 
-begin = input('>')
-while begin.lower() == run:
-    print ("""
-Start - starts your car
-Stop - stops your car
-Quit - quits the game
-""")
-    break
+begin = (input(">:"))
 
-else:
-    print ("I dont understand... (restart and type help to start)")
-    
+while begin.lower() == run:
+    print (""" Start - starts your car
+Stop - stops your car
+Quit - quits the game""")
+    while begin.lower() == start:
+        print ("Your car has started")
+        while begin.lower() == stop
+        print ('')
