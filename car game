@@ -1,0 +1,17 @@
+run = "help"
+start = "start"
+stop = "stop"
+quit = "quit"
+
+begin = input('>')
+while begin.lower() == run:
+    print ("""
+Start - starts your car
+Stop - stops your car
+Quit - quits the game
+""")
+    break
+
+else:
+    print ("I dont understand... (restart and type help to start)")
+    
