@@ -9,7 +9,15 @@ while begin.lower() == run:
     print (""" Start - starts your car
 Stop - stops your car
 Quit - quits the game""")
-    while begin.lower() == start:
-        print ("Your car has started")
-        while begin.lower() == stop
-        print ('')
+    begin = input(">:")
+    break
+while begin.lower() == start:
+    print ("Your car has started")
+    begin = input(">:")
+    break
+while begin.lower() == stop:
+    print ('Your car has stopped')
+    begin = input('>:')
+    break
+while begin.lower() == quit:
+    break
