@@ -3,12 +3,17 @@ started = False
 stopped = False
 while True:
     command = input("> ").lower()
-    if started == False:
-        print ('started') 
-        if started == True:
-            print ("Car is already started")
+    if command == "start":
+        if started:
+            print ("Car has already started.")
+        else:
+            started = True
+            print ("Started")
     elif command == "stop":
-        print ('stopped')
+        if not started:
+            print ("Car is already stopped")
+        else:
+                print ('stopped')
     elif command == "help":
         print ("""Start - starts your car
 Stop - stops your car
